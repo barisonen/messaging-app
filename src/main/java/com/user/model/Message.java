@@ -21,6 +21,9 @@ public class Message {
     @Column(name = "text")
     private String text;
 
+    @Column(name = "sender_id")
+    private Long senderId;
+
     @ManyToOne
     @JsonBackReference
     @JoinColumn(name = "chat_id")
